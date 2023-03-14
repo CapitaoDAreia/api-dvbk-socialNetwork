@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-func ConfigRoutes(db *sql.DB) []Route {
+func ConfigUsersRoutes(db *sql.DB) []Route {
 
 	repository := repository.NewUserRepository(db)
 	services := services.NewUsersServices(repository)
